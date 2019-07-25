@@ -22,3 +22,7 @@ RUN set -x \
 
 # Set the JAVA_HOME variable to make it clear where Java is located
 ENV JAVA_HOME /usr/lib/jvm/zulu-8
+ENV JAVA_PATH $JAVA_HOME
+ENV PATH=$PATH:$JAVA_HOME/bin
+ENV JRE_HOME $JAVA_HOME/jre
+ENV PATH $PATH:$JRE_HOME/bin
