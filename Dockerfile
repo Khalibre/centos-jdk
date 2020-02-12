@@ -5,7 +5,7 @@ LABEL maintainer="Sida Say <sida.say@khalibre.com>"
 RUN set -x \
     && yum install -y epel-release \
     && yum -y update \
-    && yum -y install unzip apr ghostscript ImageMagick clamav telnet tree \
+    && yum -y install unzip ghostscript ImageMagick clamav telnet tree \
     && curl -L -o /usr/local/bin/gosu https://github.com/tianon/gosu/releases/download/1.11/gosu-amd64 \
     && curl -L -o /usr/local/bin/gosu.asc https://github.com/tianon/gosu/releases/download/1.11/gosu-amd64.asc \
     && export GNUPGHOME="$(mktemp -d)" \
